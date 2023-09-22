@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    position: relative;
+    padding: 1rem .5rem;
+  }
+h1:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  content: '';
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  }
+
+/*↓表のデザイン*/
+
+th,td {
+  border: solid 1px;              /* 枠線指定 */
+  padding: 10px;      /* 余白指定 */
+  text-align:  center;        /* 文字の揃え位置指定 */
+}
+tr:nth-child(odd) {
+  background-color:  #ddd;    /* 背景色指定 */
+}
+
+table {
+  border-collapse:  collapse;     /* セルの線を重ねる */
+}
+
+
+

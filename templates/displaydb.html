@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>出席表</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/displaydb.css">
+    </head>
+
+    <body>
+        <h1>出席表</h1>
+        <div id="time"></div>
+
+        <table style="border-style: solid">
+            <tr>
+                <th>学籍番号</th> <th>名前</th> <th>出席</th> <th>遅刻</th> <th>早退</th>
+            </tr>
+
+            {% for std in stdlist %}
+            
+            <tr>
+                <td>{{std["学籍番号"]}}</td> <td>{{std["名前"]}}</td> <td>{{std["出席"]}}</td> <td>{{std["遅刻"]}}</td> <td>{{std["早退"]}}</td>
+            {% endfor %}
+            </tr>
+        </table>
+        
+
+        <script src="../static/js/Date.js"></script>
+        
+    </body>
+</html>
