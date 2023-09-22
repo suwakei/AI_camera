@@ -39,7 +39,7 @@ def headshots():
             img_counter += 1
 
     cam.release()
-
+    # window delete
     cv2.destroyAllWindows()
 
 
